@@ -863,9 +863,8 @@ body {
 .guaranties__item::before {
   content: "0" counter(counter) ".";
   margin-right: 10px;
+  margin-top: -5px;
   letter-spacing: -0.05em;
-  top: 0;
-  left: 0;
   font-weight: 600;
   color: #a1273c;
   font-size: 24px;
