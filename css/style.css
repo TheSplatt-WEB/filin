@@ -435,6 +435,7 @@ body {
 .footer__row {
   max-width: 310px;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .footer__social {
@@ -793,8 +794,8 @@ body {
 
 .mission__icon::before {
   content: '';
-  width: 100%;
-  height: 50px;
+  width: 70%;
+  height: 70%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1083,30 +1084,29 @@ body {
   max-width: 290px;
   width: 100%;
   padding-left: 25px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
+  position: relative;
+}
+
+.contacts__item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 2px;
+  width: 100%;
+  background-color: #a1273c;
 }
 
 .contacts__name {
   color: #fff;
   text-transform: uppercase;
-  padding-bottom: 20px;
   margin-bottom: 25px;
-  position: relative;
   white-space: nowrap;
-}
-
-.contacts__name::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  border-radius: 2px;
-  max-width: 240px;
-  width: 100%;
-  background-color: #a1273c;
 }
 
 .contacts__phones {
@@ -1115,7 +1115,7 @@ body {
 }
 
 .contacts__phone {
-  display: inline-block;
+  display: block;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -1137,6 +1137,7 @@ body {
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
+  display: block;
 }
 
 .map {
@@ -1603,16 +1604,20 @@ body {
 
   .contacts__item {
     padding-left: 0;
+    padding-bottom: 0;
     text-align: center;
     max-width: 100%;
   }
 
-  .contacts__item + .contacts__item {
-    margin-left: 15px;
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    padding-right: 15px;
+    margin-right: 15px;
   }
 
-  .contacts__name::before {
-    max-width: 100%;
+  .contacts__item:not(:last-child)::before {
+    width: 2px;
+    height: 100%;
   }
 
   .map {
@@ -1707,8 +1712,19 @@ body {
     align-items: center;
   }
 
-  .contacts__item + .contacts__item {
-    margin-left: 0;
+  .contacts__item {
+    padding-bottom: 20px;
+  }
+
+  .contacts__item:not(:last-child) {
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts__item:not(:last-child)::before {
+    width: 100%;
+    height: 2px;
   }
 }
 
