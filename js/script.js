@@ -69,13 +69,17 @@ $(function () {
       scrollTop: top
     }, 800);
   });
-  $(window).on('scroll', function () {
+
+  function headerFixed() {
     if ($(window).scrollTop() > 150) {
       $('.header').addClass('fixed');
     } else {
       $('.header').removeClass('fixed');
     }
-  });
+  }
+
+  headerFixed();
+  $(window).on('scroll', headerFixed);
   var windowHeight = $(window).height();
   $(document).on('scroll', function () {
     $('.counter').each(function () {
