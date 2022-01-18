@@ -76,4 +76,28 @@ $(function () {
       $('.header').removeClass('fixed');
     }
   });
+  var windowHeight = $(window).height();
+  $(document).on('scroll', function () {
+    $('.counter').each(function () {
+      var self = $(this),
+          height = self.offset().top + self.height();
+
+      if ($(document).scrollTop() + windowHeight >= height) {
+        $('.counter').each(function () {
+          if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).prop('Counter', 0).animate({
+              Counter: $(this).text()
+            }, {
+              duration: 2000,
+              easing: 'swing',
+              step: function step(now) {
+                $(this).text(Math.ceil(now));
+              }
+            });
+          }
+        });
+      }
+    });
+  });
 });
