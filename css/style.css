@@ -1341,7 +1341,7 @@ body {
   }
 
   .title--mini {
-    font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
   }
 
   .top__text {
@@ -1685,6 +1685,20 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .title {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .title--center {
+    text-align: left;
+  }
+
+  .title::before {
+    max-width: 100%;
+  }
+
   .footer__body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
