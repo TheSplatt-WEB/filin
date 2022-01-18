@@ -992,8 +992,8 @@ body {
 .statistics-info__percent {
   line-height: 1;
   font-size: 36px;
-  -ms-flex-preferred-size: 100px;
-  flex-basis: 100px;
+  -ms-flex-preferred-size: 130px;
+  flex-basis: 130px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-box-flex: 0;
@@ -1417,8 +1417,8 @@ body {
   }
 
   .statistics-info__percent {
-    -ms-flex-preferred-size: calc(80px + 20 * ((100vw - 320px) / 1600));
-    flex-basis: calc(80px + 20 * ((100vw - 320px) / 1600));
+    -ms-flex-preferred-size: calc(85px + 45 * ((100vw - 320px) / 1600));
+    flex-basis: calc(85px + 45 * ((100vw - 320px) / 1600));
   }
 
   .statistics-info__percent span {
