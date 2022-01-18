@@ -1156,6 +1156,12 @@ body {
   transition: border 0.3s;
 }
 
+.reviews__btn:active {
+  -webkit-transform: translate(1px, calc(-50% + 1px));
+  -ms-transform: translate(1px, calc(-50% + 1px));
+  transform: translate(1px, calc(-50% + 1px));
+}
+
 .reviews__btn path {
   fill: #a1273c;
 }
