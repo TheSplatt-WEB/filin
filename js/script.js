@@ -71,10 +71,10 @@ $(function () {
   });
 
   function headerFixed() {
-    if ($(window).scrollTop() > 150) {
-      $('.header').addClass('fixed');
+    if ($(window).scrollTop() > 45.6) {
+      $('.header__body, .top').addClass('fixed');
     } else {
-      $('.header').removeClass('fixed');
+      $('.header__body, .top').removeClass('fixed');
     }
   }
 
