@@ -336,17 +336,32 @@ body {
   width: 2px;
 }
 
-.header__phone {
-  color: #fff;
-}
-
 .header__citty-link {
   color: gray;
+  text-decoration: underline;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-transition: color 0.3s, -webkit-text-decoration-color 0.3s;
+  transition: color 0.3s, -webkit-text-decoration-color 0.3s;
+  -o-transition: text-decoration-color 0.3s, color 0.3s;
+  transition: text-decoration-color 0.3s, color 0.3s;
+  transition: text-decoration-color 0.3s, color 0.3s, -webkit-text-decoration-color 0.3s;
 }
 
 .header__citty-link.active {
   color: #fff;
+}
+
+.header__phone {
+  color: #fff;
   text-decoration: underline;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-transition: -webkit-text-decoration-color 0.3s;
+  transition: -webkit-text-decoration-color 0.3s;
+  -o-transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s;
+  transition: text-decoration-color 0.3s, -webkit-text-decoration-color 0.3s;
 }
 
 .header__body {
@@ -2158,6 +2173,22 @@ body {
 
   .social__link:hover path {
     fill: #fff;
+  }
+
+  .header__citty-link.active:hover {
+    -webkit-text-decoration-color: transparent;
+    text-decoration-color: transparent;
+  }
+
+  .header__citty-link:hover {
+    -webkit-text-decoration-color: #fff;
+    text-decoration-color: #fff;
+    color: #fff;
+  }
+
+  .header__phone:hover {
+    -webkit-text-decoration-color: #fff;
+    text-decoration-color: #fff;
   }
 
   .header__logo:hover {
