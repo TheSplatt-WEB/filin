@@ -148,6 +148,16 @@ body {
   background-color: #fff;
 }
 
+body *::-moz-selection {
+  background-color: #a1273c;
+  color: #fff;
+}
+
+body *::selection {
+  background-color: #a1273c;
+  color: #fff;
+}
+
 body.lock {
   overflow: hidden;
 }
