@@ -1934,6 +1934,12 @@ body.lock {
   margin-bottom: 15px;
 }
 
+.stages-work__name {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
 .service-statistics {
   margin-bottom: 50px;
 }
