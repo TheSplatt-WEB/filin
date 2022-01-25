@@ -3341,13 +3341,18 @@ body.lock {
     transform: scale(1.4) rotate(0deg) translateX(0);
   }
 
+  .popup__body {
+    scrollbar-color: #a1273c transparent;
+    scrollbar-width: thin;
+  }
+
   .popup__body::-webkit-scrollbar {
     width: 8px;
-    background-color: #bfbbb9;
+    background-color: transparent;
   }
 
   .popup__body::-webkit-scrollbar-thumb {
-    background-color: #a1273c;
+    background: linear-gradient(0deg, #a1273c 0%, #a1273c calc(100% - 30px), rgba(161, 39, 60, 0) 80%, rgba(161, 39, 60, 0) 100%);
     border-radius: 10px;
   }
 
