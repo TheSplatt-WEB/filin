@@ -118,6 +118,22 @@ $(function () {
     $('.to-main__wrapper').removeClass('open');
     $('body').removeClass('lock');
   });
+  $('.footer-list__link--politics').on('click', function () {
+    $('.popup--politics').addClass('open');
+    $('body').addClass('lock');
+  });
+  $('.footer-list__link--offer').on('click', function () {
+    $('.popup--offer').addClass('open');
+    $('body').addClass('lock');
+  });
+  $('.footer-list__link--requisites').on('click', function () {
+    $('.popup--requisites').addClass('open');
+    $('body').addClass('lock');
+  });
+  $('.popup__btn').on('click', function () {
+    $('.popup').removeClass('open');
+    $('body').removeClass('lock');
+  });
 });
 var questionsLink = document.querySelectorAll('.accordion__btn');
 
