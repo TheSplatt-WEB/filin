@@ -125,11 +125,11 @@ $(function () {
   $('.footer-list__link--offer').on('click', function () {
     $('.popup--offer').addClass('open');
     $('body').addClass('lock');
-  });
-  $('.footer-list__link--requisites').on('click', function () {
-    $('.popup--requisites').addClass('open');
-    $('body').addClass('lock');
-  });
+  }); // $('.footer-list__link--requisites').on('click', function () {
+  // 	$('.popup--requisites').addClass('open');
+  // 	$('body').addClass('lock')
+  // });
+
   $('.popup__btn').on('click', function () {
     $('.popup').removeClass('open');
     $('body').removeClass('lock');
