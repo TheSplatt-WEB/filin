@@ -992,6 +992,11 @@ body.lock {
   margin-bottom: 20px;
 }
 
+.sections__descr span {
+  display: block;
+  color: #a1273c;
+}
+
 .sections__list {
   padding-left: 15px;
 }
